@@ -1,6 +1,6 @@
-console.log('hi');
-const canvas = document.getElementById('game');
-const ctx = canvas.getContext('2d');
-
-ctx.fillStyle = 'green';
-ctx.fillRect(10, 10, 150, 100);
+(function (ctx, height, width) {
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 150, 100);
+})(
+    document.getElementById('canvas').getContext('2d')
+)
